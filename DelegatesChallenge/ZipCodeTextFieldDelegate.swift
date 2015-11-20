@@ -13,16 +13,6 @@ class ZipCodeTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let newString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
-        return newString.characters.count <= 5 && self.containsOnlyDigits(newString)
-    }
-    
-    func containsOnlyDigits(string: String) -> Bool {
-        let digits = NSCharacterSet.decimalDigitCharacterSet()
-        for uni in string.unicodeScalars {
-            if (!digits.longCharacterIsMember(uni.value)) {
-                return false
-            }
-        }
-        return true
+        return newString.characters.count <= 5 && newString.containsOnlyDigits()
     }
 }

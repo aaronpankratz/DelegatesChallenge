@@ -14,10 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var lockableTextField: UITextField!
     
     let zipCodeTextFieldDelegate = ZipCodeTextFieldDelegate()
+    let cashTextFieldDelegate = CashTextFieldDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.zipCodeTextField.delegate = self.zipCodeTextFieldDelegate
+        self.cashTextField.delegate = self.cashTextFieldDelegate
     }
 
     override func didReceiveMemoryWarning() {

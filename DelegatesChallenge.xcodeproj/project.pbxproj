@@ -15,6 +15,8 @@
 		D517C9AA1BFED30700585D68 /* DelegatesChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D517C9A91BFED30700585D68 /* DelegatesChallengeTests.swift */; };
 		D517C9B51BFED30700585D68 /* DelegatesChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D517C9B41BFED30700585D68 /* DelegatesChallengeUITests.swift */; };
 		D517C9C31BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D517C9C21BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift */; };
+		D58478D81BFEF679005C2A70 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58478D71BFEF679005C2A70 /* CashTextFieldDelegate.swift */; };
+		D58478DA1BFEFB05005C2A70 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58478D91BFEFB05005C2A70 /* String+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D517C9B41BFED30700585D68 /* DelegatesChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesChallengeUITests.swift; sourceTree = "<group>"; };
 		D517C9B61BFED30700585D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D517C9C21BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		D58478D71BFEF679005C2A70 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
+		D58478D91BFEFB05005C2A70 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				D517C9941BFED30700585D68 /* AppDelegate.swift */,
 				D517C9961BFED30700585D68 /* ViewController.swift */,
 				D517C9C21BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift */,
+				D58478D71BFEF679005C2A70 /* CashTextFieldDelegate.swift */,
+				D58478D91BFEFB05005C2A70 /* String+Utils.swift */,
 				D517C9981BFED30700585D68 /* Main.storyboard */,
 				D517C99B1BFED30700585D68 /* Assets.xcassets */,
 				D517C99D1BFED30700585D68 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58478DA1BFEFB05005C2A70 /* String+Utils.swift in Sources */,
 				D517C9971BFED30700585D68 /* ViewController.swift in Sources */,
+				D58478D81BFEF679005C2A70 /* CashTextFieldDelegate.swift in Sources */,
 				D517C9C31BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				D517C9951BFED30700585D68 /* AppDelegate.swift in Sources */,
 			);
@@ -488,6 +496,7 @@
 				D517C9BB1BFED30700585D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D517C9BC1BFED30700585D68 /* Build configuration list for PBXNativeTarget "DelegatesChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				D517C9BE1BFED30700585D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D517C9BF1BFED30700585D68 /* Build configuration list for PBXNativeTarget "DelegatesChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				D517C9C11BFED30700585D68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
