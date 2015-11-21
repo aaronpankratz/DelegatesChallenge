@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         self.zipCodeTextField.delegate = self.zipCodeTextFieldDelegate
         self.cashTextField.delegate = self.cashTextFieldDelegate
         self.lockableTextFieldDelegate.lockSwitch = self.lockSwitch
-        self.lockableTextField.delegate = self.lockableTextFieldDelegate        
+        self.lockableTextField.delegate = self.lockableTextFieldDelegate
     }
 
     override func didReceiveMemoryWarning() {
