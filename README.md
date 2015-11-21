@@ -1,4 +1,4 @@
-# DelegatesChallenge iOS app for Udacity UIKit Fundamentals Lesson 3 #
+# DelegatesChallenge iOS app for Udacity UIKit Fundamentals #
 
 ### Here is a breakdown of the requirements for the Challenge App: ###
 
