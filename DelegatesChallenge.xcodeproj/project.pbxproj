@@ -17,6 +17,7 @@
 		D517C9C31BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D517C9C21BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift */; };
 		D58478D81BFEF679005C2A70 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58478D71BFEF679005C2A70 /* CashTextFieldDelegate.swift */; };
 		D58478DA1BFEFB05005C2A70 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58478D91BFEFB05005C2A70 /* String+Utils.swift */; };
+		D58478DC1BFFF033005C2A70 /* LockableTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58478DB1BFFF033005C2A70 /* LockableTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D517C9C21BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
 		D58478D71BFEF679005C2A70 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		D58478D91BFEFB05005C2A70 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		D58478DB1BFFF033005C2A70 /* LockableTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockableTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D517C9961BFED30700585D68 /* ViewController.swift */,
 				D517C9C21BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift */,
 				D58478D71BFEF679005C2A70 /* CashTextFieldDelegate.swift */,
+				D58478DB1BFFF033005C2A70 /* LockableTextFieldDelegate.swift */,
 				D58478D91BFEFB05005C2A70 /* String+Utils.swift */,
 				D517C9981BFED30700585D68 /* Main.storyboard */,
 				D517C99B1BFED30700585D68 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				D58478DA1BFEFB05005C2A70 /* String+Utils.swift in Sources */,
 				D517C9971BFED30700585D68 /* ViewController.swift in Sources */,
 				D58478D81BFEF679005C2A70 /* CashTextFieldDelegate.swift in Sources */,
+				D58478DC1BFFF033005C2A70 /* LockableTextFieldDelegate.swift in Sources */,
 				D517C9C31BFEDB0500585D68 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				D517C9951BFED30700585D68 /* AppDelegate.swift in Sources */,
 			);

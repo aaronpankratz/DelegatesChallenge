@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuU-HM-Ktf">
-                                <rect key="frame" x="40" y="140" width="520" height="30"/>
+                                <rect key="frame" x="40" y="140" width="461" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -36,15 +36,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBO-Nq-NQM">
+                                <rect key="frame" x="511" y="139" width="51" height="31"/>
+                                <animations/>
+                            </switch>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="AuU-HM-Ktf" secondAttribute="trailing" constant="20" id="0mH-kH-rO7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aBO-Nq-NQM" secondAttribute="trailing" constant="20" id="1Cx-CA-MPc"/>
                             <constraint firstItem="EHm-bI-QRo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="AXV-Gi-GRy"/>
                             <constraint firstItem="AuU-HM-Ktf" firstAttribute="top" secondItem="wye-zZ-Iqq" secondAttribute="bottom" constant="20" id="FmN-M1-jul"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wye-zZ-Iqq" secondAttribute="trailing" constant="20" id="Ovi-v9-9SJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EHm-bI-QRo" secondAttribute="trailing" constant="20" id="Yr9-Ty-aoJ"/>
+                            <constraint firstItem="aBO-Nq-NQM" firstAttribute="centerY" secondItem="AuU-HM-Ktf" secondAttribute="centerY" id="bbK-th-88Z"/>
+                            <constraint firstItem="aBO-Nq-NQM" firstAttribute="leading" secondItem="AuU-HM-Ktf" secondAttribute="trailing" constant="10" id="ga1-JP-6VM"/>
                             <constraint firstItem="wye-zZ-Iqq" firstAttribute="top" secondItem="EHm-bI-QRo" secondAttribute="bottom" constant="20" id="lqQ-bS-jMC"/>
                             <constraint firstItem="wye-zZ-Iqq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="qgh-sq-ex7"/>
                             <constraint firstItem="EHm-bI-QRo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ruK-fJ-2Me"/>
@@ -53,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="cashTextField" destination="wye-zZ-Iqq" id="qei-Cw-saY"/>
+                        <outlet property="lockSwitch" destination="aBO-Nq-NQM" id="vQ4-6e-m9O"/>
                         <outlet property="lockableTextField" destination="AuU-HM-Ktf" id="Yoc-Mp-KUn"/>
                         <outlet property="zipCodeTextField" destination="EHm-bI-QRo" id="2VV-dl-dI4"/>
                     </connections>
