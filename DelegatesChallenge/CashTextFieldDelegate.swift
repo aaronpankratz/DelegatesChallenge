@@ -11,32 +11,31 @@ import UIKit
 
 class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
     
-    let numberFormatter = NSNumberFormatter()
-    
     override init() {
         super.init()
-        self.numberFormatter.numberStyle = .CurrencyStyle
     }
-    
+
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        // TODO handle delete
-        var existingText = textField.text!
+        let newString = (textField.text! as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        
+        let digitString = newString
             .stringByReplacingOccurrencesOfString("$", withString: "")
             .stringByReplacingOccurrencesOfString(".", withString: "")
-            .stringByReplacingOccurrencesOfString(",", withString: "")
-        if (existingText.characters.count <= 4) {
-            //TODO figure out math way for string with length < 4
-            existingText = existingText.characters.count == 0 ? "0" : existingText
-//            var intValue = Int(existingText)!
-//            var doubleValue = Double(intValue * 10) + Double(intValue % ) + Double(string)!
-            
-            let number = self.numberFormatter.numberFromString(existingText)
-            textField.text = self.numberFormatter.stringFromNumber(number!)
+        
+        if let pennies = Int(digitString) {
+            let remainder = pennies % 100
+            let centString = (remainder < 10) ? "0\(remainder)" : "\(remainder)"
+            textField.text = "$\(pennies / 100).\(centString)"
         }
         else {
-            let secondToLastCharacterIndex = existingText.startIndex.advancedBy(existingText.characters.count - 1)
-            textField.text = "$" + existingText.substringToIndex(secondToLastCharacterIndex) + "." + existingText.substringFromIndex(secondToLastCharacterIndex) + string
+            textField.text = "$0.00"
         }
         return false
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        if textField.text!.isEmpty {
+            textField.text = "$0.00"
+        }
     }
 }
